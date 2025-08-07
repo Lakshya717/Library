@@ -25,9 +25,10 @@ int swap(void *a,void*b,size_t size) {
 
 /*
 Sorts an array according to bubble sort algorithm;
-    - a (void *)    : pointer to the first variable
-    - b (void *)    : pointer to the second variable
-    - size (size_t) : size of the data type involved
+    - arr (void *)                      : pointer to the first variable
+    - size (size_t)                     : size of the data type involved
+    - len (size_t)                      : length of the array involved
+    - compare (int (*)(void *, void *)) : comparator function
 Returns a `void *` pointer to the sorted array.
 */
 void* bsort(void *arr,size_t size, size_t len,int (*compare)(void *, void *)) {
